@@ -1,0 +1,27 @@
+import FullScreenBackground from '@/app/background';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import { MathJaxProvider } from './components/MathJaxProvider';
+import './globals.css';
+
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className="dark">
+      <body className="antialiased">
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <div className="z-[-1]">
+            <FullScreenBackground />
+          </div>
+          <main className="flex-grow"><MathJaxProvider>{children}</MathJaxProvider></main>
+          <Footer />
+        </div>
+      </body>
+    </html>
+  );
+}

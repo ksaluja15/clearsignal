@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+
+:root {
+  --color-darkmode: #111315;
+  --color-dark-secondary: #1a1c1e;
+  --color-border: #2a2d30;
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(215, 10%, 65%);
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-serif: Georgia, Times, serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-darkmode);
+  color: var(--color-text-secondary);
+}
+
+.post-content > p,
+.post-content > ul,
+.post-content > ol {
+  font-family: var(--font-serif);
+}
+
+.post-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-text-primary);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-primary);
+}
+
+pre {
+  background-color: #0d1117 !important;
+  border: 1px solid #30363d;
+  font-family: var(--font-mono);
+  overflow-x: auto;
+  color: #e6edf3;
+}
+
+
+.content-grid {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns:
+      [full-start] 1fr
+      [wide-start] minmax(0, 8rem)
+      [main-start] minmax(0, 720px)
+      [main-end] minmax(0, 8rem)
+      [wide-end] 1fr
+      [full-end];
+  }
+
+  .content-grid > * {
+    grid-column: main-start / main-end;
+  }
+
+  .content-grid > .breakout-wide {
+    grid-column: wide-start / wide-end;
+  }
+
+  .content-grid > .breakout-full {
+    grid-column: full-start / full-end;
+  }
+}
+
+
+.post-content a {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-text-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+}
+
+.post-content a:hover {
+  color: var(--color-text-secondary);
+  text-decoration-color: var(--color-text-secondary);
+}
+
+.math-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}

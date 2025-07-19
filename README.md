@@ -1,2 +1,0 @@
-# clearsignal
-Personal Blog
