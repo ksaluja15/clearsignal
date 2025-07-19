@@ -18,14 +18,14 @@ export default function Page() {
           <h1 className="text-5xl font-extrabold drop-shadow-md md:text-7xl">
             Kunal Saluja
           </h1>
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/ksaluja/?ref=clearsignal.xyz"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 rounded-md bg-white px-8 py-3 font-semibold text-black transition hover:bg-gray-200"
           >
             Find me on LinkedIn
-          </a>
+          </a> */}
         </div>
       </header>
 
