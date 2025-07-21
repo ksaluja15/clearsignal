@@ -1,11 +1,11 @@
 // navbar and header components, fully responsive
 'use client';
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import SearchModal from './SearchModal'; 
+import { useEffect, useState } from 'react';
+import SearchModal from './SearchModal';
 
 const SearchIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-5 w-5">
@@ -56,9 +56,9 @@ export default function Header() {
                     </div>
 
                     <div className="hidden flex-1 items-center justify-center gap-8 md:flex">
-                        <Link href="/" className="text-sm font-medium text-white hover:text-gray-300">Home</Link>
-                        <Link href="/author" className="text-sm font-medium text-white hover:text-gray-300">Author</Link>
-                        <Link href="/portfolio" className="text-sm font-medium text-white hover:text-gray-300">Portfolio</Link>
+                        <Link href="/" className="text-2xl font-medium text-white hover:text-gray-200">Home</Link>
+                        <Link href="/author" className="text-2xl font-medium text-white hover:text-gray-200">Author</Link>
+                        <Link href="/portfolio" className="text-2xl font-medium text-white hover:text-gray-200">Portfolio</Link>
                     </div>
 
                     <div className="flex flex-1 items-center justify-end gap-4">
