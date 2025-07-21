@@ -1,5 +1,6 @@
 import FullScreenBackground from '@/app/background';
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { MathJaxProvider } from './components/MathJaxProvider';
@@ -16,6 +17,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <Header />
           <Analytics/>
+          <SpeedInsights/>
           <div className="z-[-1]">
             <FullScreenBackground />
           </div>
