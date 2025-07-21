@@ -1,9 +1,9 @@
 import FullScreenBackground from '@/app/background';
+import { Analytics } from "@vercel/analytics/next";
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { MathJaxProvider } from './components/MathJaxProvider';
 import './globals.css';
-
 
 export default function RootLayout({
   children,
@@ -15,6 +15,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
+          <Analytics/>
           <div className="z-[-1]">
             <FullScreenBackground />
           </div>
