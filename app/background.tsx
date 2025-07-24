@@ -36,8 +36,8 @@ function FullScreenBackground() {
         particleCount={50}
         connectionDistance={300}
         backgroundColor="rgba(0, 0, 0, 0.5)"
-        particleColor="#FFFFFF"
-        connectionColor="#FF0000"
+        particleColor="#0e7fff"
+        connectionColor="#FFFFFF"
       />
     </div>
   );
