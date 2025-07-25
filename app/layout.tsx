@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { MathJaxProvider } from './components/MathJaxProvider';
-import './globals.css';
+import './css/globals.css';
 
 export default function RootLayout({
   children,

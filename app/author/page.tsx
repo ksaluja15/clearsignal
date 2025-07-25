@@ -1,36 +1,35 @@
 // author page
-import Image from 'next/image';
+import TiltedCard from '../components/TiltedCard';
 
-const heroImage = '/author/IMG_2008-1.jpg';
+const heroImage = '/ks.jpg';
 
 export default function Page() {
   return (
     <article className="pb-8 sm:pb-16">
-      <header className="relative flex h-[500px] w-full items-center justify-center">
-        <Image
-          src={heroImage}
-          alt="Scenic view of rolling green hills with Kunal Saluja in the foreground."
-          fill
-          priority
-          className="object-cover brightness-[0.8] object-left"
-        />
-        <div className="absolute flex flex-col items-center text-center text-white">
-          <h1 className="text-5xl font-extrabold drop-shadow-md md:text-7xl">
+      
+      <div className="flex flex-col items-center justify-center mt-16">
+        <TiltedCard
+          imageSrc={heroImage}
+          altText="Kunal Saluja"
+          captionText="Kunal Saluja"
+          containerHeight="400px"
+          containerWidth="300px"
+          imageHeight="400px"
+          imageWidth="300px"
+          rotateAmplitude={15}
+          scaleOnHover={1.1}
+          showMobileWarning={false}
+          showTooltip={false}
+          displayOverlayContent={false}
+          >Kunal Saluja</TiltedCard>
+            <h2 className="flex justify-center mt-12 items-center text-white text-3xl md:text-4xl font-bold h-full">
             Kunal Saluja
-          </h1>
-          {/* <a
-            href="https://www.linkedin.com/in/ksaluja/?ref=clearsignal.xyz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 rounded-md bg-white px-8 py-3 font-semibold text-black transition hover:bg-gray-200"
-          >
-            Find me on LinkedIn
-          </a> */}
+            </h2>
         </div>
-      </header>
 
       <div className="post-content content-grid mt-16 space-y-8 px-4 text-lg leading-relaxed text-[var(--color-text-secondary)] md:text-xl">
-        <h2 className="!mt-0 text-3xl font-bold text-white md:text-4xl">
+        <hr className="!my-12 border-gray-700" />
+        <h2 className="!mt-8 text-3xl font-bold text-white md:text-4xl">
           About Me
         </h2>
         <ul className="list-inside list-disc space-y-3">

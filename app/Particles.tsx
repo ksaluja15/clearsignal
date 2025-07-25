@@ -3,7 +3,7 @@
 import { Camera, Geometry, Mesh, Program, Renderer } from "ogl";
 import React, { useEffect, useRef } from "react";
 
-import '@/app/Particles.css'; // Ensure you have a CSS file for styling
+import '@/app/css/Particles.css'; // Ensure you have a CSS file for styling
 
 interface ParticlesProps {
   particleCount?: number;
