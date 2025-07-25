@@ -6,7 +6,7 @@ const heroImage = '/ks.jpg';
 export default function Page() {
   return (
     <article className="pb-8 sm:pb-16">
-      
+
       <div className="flex flex-col items-center justify-center mt-16">
         <TiltedCard
           imageSrc={heroImage}
@@ -21,7 +21,7 @@ export default function Page() {
           showMobileWarning={false}
           showTooltip={false}
           displayOverlayContent={false}
-          >Kunal Saluja</TiltedCard>
+          />
             <h2 className="flex justify-center mt-12 items-center text-white text-3xl md:text-4xl font-bold h-full">
             Kunal Saluja
             </h2>
