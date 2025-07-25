@@ -6,7 +6,6 @@ const heroImage = '/ks.jpg';
 export default function Page() {
   return (
     <article className="pb-8 sm:pb-16">
-
       <div className="flex flex-col items-center justify-center mt-16">
         <TiltedCard
           imageSrc={heroImage}
@@ -27,7 +26,7 @@ export default function Page() {
             </h2>
         </div>
 
-      <div className="post-content content-grid mt-16 space-y-8 px-4 text-lg leading-relaxed text-[var(--color-text-secondary)] md:text-xl">
+      <div className="post-content content-grid mt-8 space-y-8 px-4 text-lg leading-relaxed text-[var(--color-text-secondary)] md:text-xl">
         <hr className="!my-12 border-gray-700" />
         <h2 className="!mt-8 text-3xl font-bold text-white md:text-4xl">
           About Me
