@@ -1,6 +1,6 @@
 "use client";
 //gets data from /data/posts.ts and does the webpages
-import BrainParticleAnimation from '@/app/BrainParticleAnimation';
+import BrainParticleAnimation from '@/app/components/BrainParticleAnimation';
 import { useEffect, useState } from 'react';
 
 function FullScreenBackground() {
@@ -33,9 +33,9 @@ function FullScreenBackground() {
       <BrainParticleAnimation 
         width={dimensions.width}
         height={dimensions.height}
-        particleCount={50}
-        connectionDistance={300}
-        backgroundColor="rgba(0, 0, 0, 0.5)"
+        particleCount={100}
+        connectionDistance={150}
+        backgroundColor="rgba(0, 0, 0, 1)"
         particleColor="#0e7fff"
         connectionColor="#FFFFFF"
       />

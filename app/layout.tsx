@@ -1,4 +1,4 @@
-import FullScreenBackground from '@/app/background';
+import FullScreenBackground from '@/app/components/background';
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from './components/Footer';
