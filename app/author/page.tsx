@@ -30,6 +30,8 @@ export default function Page() {
               showCursor={true}
               cursorCharacter="|"
               loop={true}
+              variableSpeed={false}
+              onSentenceComplete={() => {}}
             />
         </h2>
       </div>
