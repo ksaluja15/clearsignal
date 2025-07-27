@@ -180,11 +180,11 @@ const TextType: React.FC<TextTypeProps> = ({
     Component,
     {
       ref: containerRef,
-      className: `text-type ${className}`,
+  className: `text-type text-center text-justify ${className}`,
       ...props,
     },
     <span
-      className="text-type__content"
+      className="text-type__content text-center text-justify"
       style={{ color: getCurrentTextColor() }}
     >
       {displayedText}
