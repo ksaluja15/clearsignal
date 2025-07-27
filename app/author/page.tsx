@@ -29,9 +29,6 @@ export default function Page() {
               pauseDuration={1500}
               showCursor={true}
               cursorCharacter="|"
-              loop={true}
-              variableSpeed={false}
-              onSentenceComplete={() => {}}
             />
         </h2>
       </div>
