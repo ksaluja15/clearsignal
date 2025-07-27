@@ -24,7 +24,7 @@ export default function Page() {
         />
         <h2 className="flex justify-center mt-12 items-center text-white text-3xl md:text-4xl font-bold h-full">
           <TextType 
-              text={["Kunal Saluja", "Computer Vision Researcher"]}
+              text={["Kunal Saluja", "Vision & Robotics"]}
               typingSpeed={40}
               pauseDuration={1500}
               showCursor={true}
