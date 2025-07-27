@@ -1,7 +1,8 @@
 // author page
-import Card from "../components/Card";
-import TiltedCard from "../components/TiltedCard";
+import Card from "@/app/components/Card";
+import TiltedCard from "@/app/components/TiltedCard";
 const heroImage = "/ks.jpg";
+import TextType from '@/app/components/TextType';
 
 export default function Page() {
   return (
@@ -22,7 +23,14 @@ export default function Page() {
           displayOverlayContent={false}
         />
         <h2 className="flex justify-center mt-12 items-center text-white text-3xl md:text-4xl font-bold h-full">
-          Kunal Saluja
+          <TextType 
+              text={["Kunal Saluja", "Computer Vision Researcher"]}
+              typingSpeed={40}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              loop={true}
+            />
         </h2>
       </div>
 
@@ -34,7 +42,7 @@ export default function Page() {
 
         <Card className="flex flex-col items-center justify-center">
           <p className="text-center">
-            Seasoned Computer Vision Researcher with over a decade of experience
+            A decade of experience
             crafting innovative AI solutions across diverse industries including
             AR/VR, robotics, retail, and agriculture.
           </p>
