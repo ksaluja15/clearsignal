@@ -59,6 +59,7 @@ export default function Header() {
                         <Link href="/" className="text-2xl font-medium text-white hover:text-gray-200">Home</Link>
                         <Link href="/author" className="text-2xl font-medium text-white hover:text-gray-200">Author</Link>
                         <Link href="/portfolio" className="text-2xl font-medium text-white hover:text-gray-200">Portfolio</Link>
+                        <Link href="/experimental" className="text-2xl font-medium text-white hover:text-gray-200">Experimental</Link>
                     </div>
 
                     <div className="flex flex-1 items-center justify-end gap-4">
@@ -96,6 +97,7 @@ export default function Header() {
                         <Link href="/" className="text-3xl font-medium text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Home</Link>
                         <Link href="/author" className="text-3xl font-medium text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Author</Link>
                         <Link href="/portfolio" className="text-3xl font-medium text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+                        <Link href="/experimental" className="text-3xl font-medium text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Experimental</Link>
                     </nav>
                 </div>
             </div>
