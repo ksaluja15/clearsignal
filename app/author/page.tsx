@@ -1,8 +1,8 @@
 // author page
 import Card from "@/app/components/Card";
+import TextType from "@/app/components/TextType";
 import TiltedCard from "@/app/components/TiltedCard";
 const heroImage = "/ks.jpg";
-import TextType from '@/app/components/TextType';
 
 export default function Page() {
   return (
@@ -23,13 +23,13 @@ export default function Page() {
           displayOverlayContent={false}
         />
         <h2 className="flex justify-center mt-12 items-center text-white text-3xl md:text-4xl font-bold h-full">
-          <TextType 
-              text={["Kunal Saluja", "Vision & Robotics"]}
-              typingSpeed={40}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="|"
-            />
+          <TextType
+            text={["Kunal Saluja", "Vision & Robotics"]}
+            typingSpeed={40}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+          />
         </h2>
       </div>
 
@@ -41,9 +41,9 @@ export default function Page() {
 
         <Card className="flex flex-col items-center justify-center">
           <p className="text-center">
-            A decade of experience
-            crafting innovative AI solutions across diverse industries including
-            AR/VR, robotics, retail, and agriculture.
+            A decade of experience crafting innovative AI solutions across
+            diverse industries including AR/VR, robotics, retail, and
+            agriculture.
           </p>
         </Card>
         <Card className="flex flex-col items-center justify-center">
